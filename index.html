@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV Miguel Llaro</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <div itemscope itemtype="http://schema.org/Person">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <img itemprop="photo" src="img/foto.jpg" class="imgRedonda" class="home_left_img">
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <section>
+                        <h1 itemprop="name" class="banner_content">Miguel Llaro</h1>
+                        <p itemprop="hasOccupation">Web developer - Software Engineer</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    <div class="datosPersonales">
+    <section>
+        <h2>Datos Personales</h2>
+        <ul>
+            <li>24 años</li>
+            <li>Trujillo</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Antecedentes Laborales</h2>
+        <h3 itemprop="worksFor">Empresa X</h3>
+        <p>Periodo: 2018 - Actualidad</p>
+        <p>Desarrollador frontend</p>
+        <h3 itemprop="worksFor">Empresa Y</h3>
+        <p>Periodo: 2015 - 2018</p>
+        <p>Desarrollo de Interfaces graficas y desarrollo frontend</p>
+    </section>
+
+    <section>
+        <h2>Estudios</h2>
+        <h3 itemprop="alumniOf">Ingenieria de Software - Universidad Privada Antenor Orrego</h3>
+        <p>Periodo: 2015-I - 2020-I</p>
+    </section>
+    
+    <section>
+        <h2>Idiomas</h2>
+        <h3 itemprop="knowsLanguage">Español</h3>
+        <p>Nativo</p>
+        <h3 itemprop="knowsLanguage">Ingles</h3>
+        <p>Nivel Intermedio</p>
+    </section>
+    
+    <section>
+        <h2>Herramientas</h2>
+        <h3>Javascript</h3>
+        <h3>Java</h3>
+        <h3>Laravel</h3>
+    </section>
+    </div>
+    
+
+    <!-- -->
+    <section class="contact_area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6 itemprop="birthPlace">Trujillo, Perú</h6>
+                            <p itemprop="address">Av. Peru N°140</p>
+                        </div>
+                        <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
+                            <h6 itemprop="telephone"><a href="#">986 378 127</a></h6>
+                        </div>
+                            <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6 itemprop="email"><a href="#">mllaros@upao.edu.pe</a></h6>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar correo">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Ingresar Asunto">
+                            </div>
+                            </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Ingresar Mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" class="btn submit_btn">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -->
+
+    <footer class="footer_area p_120">
+        <div class="container">
+            <div class="row footer_inner">
+                <div class="col-lg-5 col-sm-6">
+                    <aside class="f_widget ab_widget ab_widget">
+                        <div class="f_title">
+                            <h3>Sobre Mi</h3>
+                        </div>
+                        <p itemprop="description">
+                                Mi nombre es Miguel Angel Llaro Silva, soy un estudiante de UPAO de 9no ciclo en la carrera de Ingenieria de Software.
+                        </p>
+                    </aside>
+                </div>
+
+                <div class="col-lg-5 col-sm-6">
+                    <aside class="f_widget social_widget">
+                        <div class="f_title">
+                            <h3>Redes Sociales</h3>
+                        </div>
+                        <p>Encuentrame en:</p>
+                        <ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        					</ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    </div>
+    
+</body>
+</html>
